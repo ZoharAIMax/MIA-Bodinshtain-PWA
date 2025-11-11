@@ -1,4 +1,4 @@
-const CACHE_NAME = "mia-vocab-cache-v1-2";
+const CACHE_NAME = "mia-vocab-cache-v1-2-full";
 const ASSETS = [
   "./",
   "./index.html",
