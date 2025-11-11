@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIA Bodinshtain – Vocabulary Trainer</title>
+  <title>MIA Bodinshtain – Vocabulary Trainer v1.2</title>
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#121212" />
   <link rel="stylesheet" href="style.css" />
@@ -13,11 +13,17 @@
     <header class="app-header">
       <div class="app-title">
         <h1>MIA Bodinshtain</h1>
-        <p class="subtitle">Looking Back – Vocabulary Trainer</p>
+        <p class="subtitle">Looking Back – Vocabulary Trainer · v1.2</p>
       </div>
     </header>
 
     <main class="app-main">
+      <section class="top-controls">
+        <button id="uploadBtn" class="btn small">Upload CSV word list</button>
+        <input id="fileInput" type="file" accept=".csv,.txt" style="display:none" />
+        <button id="resetBtn" class="btn small ghost">Reset to built-in list</button>
+      </section>
+
       <section class="card">
         <div class="card-label">English</div>
         <div id="word-en" class="word-en">Press “Start” to begin</div>
@@ -52,6 +58,10 @@
         <div class="stat-item">
           <span class="stat-label">Score</span>
           <span id="scoreText" class="stat-value">0%</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Source</span>
+          <span id="sourceText" class="stat-value">Built-in list</span>
         </div>
       </section>
     </main>
