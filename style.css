@@ -137,6 +137,18 @@ body {
   border-color: rgba(240, 246, 252, 0.25);
 }
 
+/* כפתור האזנה מודגש – אופציה 3 */
+.btn.listen {
+  background: #1f6feb;
+  border-color: #388bfd;
+  font-weight: 600;
+}
+
+.btn.listen:not(:disabled):hover {
+  background: #316dca;
+  border-color: #539bf5;
+}
+
 .options-row {
   display: flex;
   align-items: center;
