@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIA Bodinshtain – Vocabulary Trainer</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#121212" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="app-title">
+        <h1>MIA Bodinshtain</h1>
+        <p class="subtitle">Looking Back – Vocabulary Trainer</p>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section class="card">
+        <div class="card-label">English</div>
+        <div id="word-en" class="word-en">Press “Start” to begin</div>
+        <div class="card-label rtl">Hebrew</div>
+        <div id="word-he" class="word-he rtl hidden">—</div>
+      </section>
+
+      <section class="controls">
+        <div class="btn-row">
+          <button id="startBtn" class="btn primary">Start</button>
+          <button id="showBtn" class="btn" disabled>Show Translation</button>
+        </div>
+        <div class="btn-row">
+          <button id="knewBtn" class="btn success" disabled>I knew it</button>
+          <button id="didntBtn" class="btn danger" disabled>I didn’t know</button>
+        </div>
+        <div class="options-row">
+          <label class="checkbox-label">
+            <input type="checkbox" id="mistakesMode" />
+            Practice mistakes only
+          </label>
+          <button id="restartBtn" class="btn ghost" disabled>Restart</button>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="stat-item">
+          <span class="stat-label">Progress</span>
+          <span id="progressText" class="stat-value">0 / 0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Score</span>
+          <span id="scoreText" class="stat-value">0%</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
